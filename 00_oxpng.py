@@ -89,7 +89,7 @@ if uploaded_file:
     from matplotlib.patches import Rectangle
     #def PlotEach():
 
-    sns.set(font="Malgun Gothic", rc={"axes.unicode_minus":False}, style='darkgrid')
+    sns.set(font="Noto Sans KR", rc={"axes.unicode_minus":False}, style='darkgrid')
 
     
 
