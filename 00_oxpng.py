@@ -151,11 +151,11 @@ if uploaded_file:
     buf = BytesIO()
     png = plt.savefig(buf,format='png')	
     #png.savefig(buf, format="png")
-    byte_im = buf.getvalue()
+    byte_im = png.getvalue()
 	
     btn = st.download_button(
       label="Download Image",
-      data=png,
+      data=byte_im,
       file_name="daejinox.png",
       mime="image/png",
       )
