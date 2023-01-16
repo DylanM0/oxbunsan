@@ -10,7 +10,7 @@ import base64  # Standard Python Module
 import numpy as np
 from io import StringIO, BytesIO  # Standard Python Module
 
-import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 
 
