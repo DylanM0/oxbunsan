@@ -40,12 +40,12 @@ if uploaded_file:
     df.columns=['전형유형','학과명','코드','합격차수','평균등급']
     
     
-    choice = df['전형명'].unique()
+    choice = df['전형유형'].unique()
     
     
     choice_column = st.selectbox('선택해주세요',choice, )
     
-    data11 = df[df['전형명'] == choice_column]
+    data11 = df[df['전형유형'] == choice_column]
     
     shushu = len(data11['학과명'].unique())
                 
