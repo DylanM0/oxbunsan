@@ -132,9 +132,11 @@ if uploaded_file:
     plt.gcf().subplots_adjust(left=0.2)
 
     png = plt.savefig('대진대ox산포도.png')
+    
             
-                
+    st.set_option('deprecation.showPyplotGlobalUse', False)            
     st.pyplot(png)
+    
     
     st.download_button(
     label="Download Pic as Png",
