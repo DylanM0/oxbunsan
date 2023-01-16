@@ -1,2 +1,4 @@
 default-jre
+language-pack-ko
 fonts-nanum*
+korean*
