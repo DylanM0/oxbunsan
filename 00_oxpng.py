@@ -24,8 +24,8 @@ import matplotlib.pyplot as plt
 # 			"""
 # st.markdown(streamlit_style, unsafe_allow_html=True)
 
-plt.rc('font', family='NanumBarunGothic')
-plt.rc('axes', unicode_minus=False)
+matplotlib.rcParams['font.family']='Malgun Gothic'
+matplotlib.rcParams['axes.unicode_minus'] =False
 
 # with open( "style.css" ) as css:
 #     st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
