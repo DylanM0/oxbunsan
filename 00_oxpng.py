@@ -64,6 +64,7 @@ if uploaded_file:
     import seaborn as sns
     import numpy as np
     import matplotlib as mpl
+    import matplotlib.pyplot as plt
     from matplotlib.patches import Rectangle
     def PlotEach():
     
@@ -129,7 +130,7 @@ if uploaded_file:
         png = plt.savefig('대진대ox산포도.png')
             
                 
-    st.PlotEach()
+    st.pyplot(PlotEach())
     
     st.download_button(
     label="Download Pic as Png",
