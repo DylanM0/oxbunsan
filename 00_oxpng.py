@@ -149,13 +149,13 @@ if uploaded_file:
 	
     from io import BytesIO
     buf = BytesIO()
-    plt.savefig(buf, format="png")
+    png.savefig(buf, format="png")
     byte_im = buf.getvalue()
 	
     btn = st.download_button(
       label="Download Image",
       data=byte_im,
-      file_name="imagename.png",
+      file_name="daejinox.png",
       mime="image/png",
       )
 
