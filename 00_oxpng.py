@@ -146,6 +146,14 @@ if uploaded_file:
             
     st.set_option('deprecation.showPyplotGlobalUse', False)            
     st.pyplot(png)
+	
+    with open(png, "rb") as file:
+    btn = st.download_button(
+            label="Download image",
+            data=file,
+            file_name="대진대ox산포도.png",
+            mime="image/png"
+          )
     
     
 #     st.download_button(
