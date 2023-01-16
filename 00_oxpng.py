@@ -105,7 +105,7 @@ if uploaded_file:
     font = fm.FontProperties(fname=fontpath, size=9)
     fm._rebuild()
 
-	plt.rc('font', family='NanumBarunGothic') 
+    plt.rc('font', family='NanumBarunGothic') 
 
     ax = sns.stripplot(x=불합격0['평균등급'], y=불합격0['학과명'], data=불합격0, marker="x",s=14,color='#111111' ,jitter=False, alpha=1, linewidth=1)
 
