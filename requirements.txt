@@ -4,4 +4,3 @@ openpyxl
 seaborn
 matplotlib
 numpy
-fonts-nanum
