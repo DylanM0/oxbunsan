@@ -149,12 +149,13 @@ if uploaded_file:
 	
 
 	
+    with open(png, "rb") as file:
     btn = st.download_button(
-      label="Download Image",
-      data=png,
-      file_name="daejinox.png",
-      mime="image/png",
-      )
+            label="Download image",
+            data=png,
+            file_name=".png",
+            mime="image/png"
+          )
 
     
     
