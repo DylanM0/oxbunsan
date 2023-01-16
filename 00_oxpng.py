@@ -147,10 +147,16 @@ if uploaded_file:
     st.set_option('deprecation.showPyplotGlobalUse', False)            
     st.pyplot(png)
 	
-    with open(png, "rb") as file:
+    def convert_df(df):
+    # IMPORTANT: Cache the conversion to prevent computation on every rerun
+    return df.to_png().encode('utf-8')
+
+    png1 = convert_df(png)
+	
+    with open(png1, "rb") as file:
     btn = st.download_button(
             label="Download image",
-            data=file,
+            data=png1,
             file_name="대진대ox산포도.png",
             mime="image/png"
           )
