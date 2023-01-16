@@ -150,7 +150,7 @@ if uploaded_file:
 
 	
     with open(png, "rb") as file:
-    btn = st.download_button(
+    	btn = st.download_button(
             label="Download image",
             data=png,
             file_name=".png",
