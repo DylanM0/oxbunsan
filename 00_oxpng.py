@@ -10,7 +10,6 @@ import base64  # Standard Python Module
 import numpy as np
 from io import StringIO, BytesIO  # Standard Python Module
 
-fontpath ="C:\Windows\Fonts\H2GTRE.TTF"
 
 
 streamlit_style = """
@@ -24,8 +23,8 @@ streamlit_style = """
 			"""
 st.markdown(streamlit_style, unsafe_allow_html=True)
 
-#plt.rc('font', family='NanumBarunGothic')
-#plt.rc('axes', unicode_minus=False)
+plt.rc('font', family='NanumBarunGothic')
+plt.rc('axes', unicode_minus=False)
 
 # with open( "style.css" ) as css:
 #     st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
