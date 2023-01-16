@@ -1,1 +1,2 @@
 default-jre
+Noto Sans KR
