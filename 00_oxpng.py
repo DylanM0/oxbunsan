@@ -138,12 +138,12 @@ if uploaded_file:
     st.pyplot(png)
     
     
-    st.download_button(
-    label="Download Pic as Png",
-    data=png,
-    file_name='대진대ox산포도.png',
-    mime='image/png',
-)
+#     st.download_button(
+#     label="Download Pic as Png",
+#     data=png,
+#     file_name='대진대ox산포도.png',
+#     mime='image/png',
+# )
     
      
     
