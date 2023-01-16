@@ -103,7 +103,7 @@ if uploaded_file:
     import matplotlib.font_manager as fm
     fontpath = '/usr/share/fonts/truetype/nanum/NanumBarunGothic.ttf'
     font = fm.FontProperties(fname=fontpath, size=9)
-    fm._rebuild()
+    
 
     plt.rc('font', family='NanumBarunGothic') 
 
