@@ -149,7 +149,7 @@ if uploaded_file:
 	
 
 	
-    with open(png, "rb") as file:
+    with open('대진대ox산포도.png', "rb") as file:
     	btn = st.download_button(
             label="Download image",
             data=png,
