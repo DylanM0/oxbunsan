@@ -147,15 +147,11 @@ if uploaded_file:
     st.set_option('deprecation.showPyplotGlobalUse', False)            
     st.pyplot(png)
 	
-    from io import BytesIO
-    buf = BytesIO()
-    plt.savefig(buf,format='png')	
-    #png.savefig(buf, format="png")
-    byte_im = buf.getvalue()
+
 	
     btn = st.download_button(
       label="Download Image",
-      data=byte_im,
+      data=png,
       file_name="daejinox.png",
       mime="image/png",
       )
