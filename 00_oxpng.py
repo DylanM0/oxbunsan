@@ -11,7 +11,7 @@ import numpy as np
 from io import StringIO, BytesIO  # Standard Python Module
 
 
-plt.rc('font', family='NanumBarunGothic')
+plt.rc('font', family='NanumBarunGothic', sans-serif;)
 plt.rc('axes', unicode_minus=False)
 
 
