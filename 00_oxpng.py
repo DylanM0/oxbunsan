@@ -152,7 +152,7 @@ if uploaded_file:
     plt.savefig(buf, format="png")
     byte_im = buf.getvalue()
 	
-    btn = col.download_button(
+    btn = st.download_button(
       label="Download Image",
       data=byte_im,
       file_name="imagename.png",
