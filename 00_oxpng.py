@@ -149,7 +149,7 @@ if uploaded_file:
 	
     from io import BytesIO
     buf = BytesIO()
-    png.save(buf, format="png")
+    plt.savefig(buf, format="png")
     byte_im = buf.getvalue()
 	
     btn = col.download_button(
