@@ -15,7 +15,7 @@ fontpath ="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&displa
 
 streamlit_style = """
 			<style>
-			@import url('https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@100&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@300&display=swap');
 
 			html, body, [class*="css"]  {
 			font-family: 'Noto Sans KR', sans-serif;
