@@ -11,18 +11,18 @@ import numpy as np
 from io import StringIO, BytesIO  # Standard Python Module
 import matplotlib.pyplot as plt
 
+%matplotlib inline
 
+# streamlit_style = """
+# 			<style>
+# 			@import url('https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@300&display=swap');
 
-streamlit_style = """
-			<style>
-			@import url('https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@300&display=swap');
-
-			html, body, [class*="css"]  {
-			font-family: 'Noto Sans KR', sans-serif;
-			}
-			</style>
-			"""
-st.markdown(streamlit_style, unsafe_allow_html=True)
+# 			html, body, [class*="css"]  {
+# 			font-family: 'Noto Sans KR', sans-serif;
+# 			}
+# 			</style>
+# 			"""
+# st.markdown(streamlit_style, unsafe_allow_html=True)
 
 plt.rc('font', family='NanumBarunGothic')
 plt.rc('axes', unicode_minus=False)
