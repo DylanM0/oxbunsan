@@ -10,7 +10,7 @@ import base64  # Standard Python Module
 import numpy as np
 from io import StringIO, BytesIO  # Standard Python Module
 
-fontpath ="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
+fontpath ="C:\Windows\Fonts\H2GTRE.TTF"
 
 
 streamlit_style = """
@@ -90,9 +90,6 @@ if uploaded_file:
     #def PlotEach():
 
     
-    sns.set_theme(font ='Noto Sans KR')
-    
-    plt.rc('font', family='Noto Sans KR') 
 
     ax = sns.stripplot(x=불합격0['평균등급'], y=불합격0['학과명'], data=불합격0, marker="x",s=14,color='#111111' ,jitter=False, alpha=1, linewidth=1)
 
