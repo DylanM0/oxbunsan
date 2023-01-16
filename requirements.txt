@@ -4,3 +4,4 @@ openpyxl
 seaborn
 matplotlib
 numpy
+koreanize_matplotlib
