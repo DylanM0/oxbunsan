@@ -12,7 +12,6 @@ from io import StringIO, BytesIO  # Standard Python Module
 
 
 
-plt.rcParams['font.sans-serif'] = ['SimHei']
 
 #plt.rc('font', family='NanumBarunGothic')
 #plt.rc('axes', unicode_minus=False)
@@ -78,6 +77,8 @@ if uploaded_file:
     import matplotlib.pyplot as plt
     from matplotlib.patches import Rectangle
     #def PlotEach():
+    
+    plt.rc('font', family='NanumBarunGothic')
     
     ax = sns.stripplot(x=불합격0['평균등급'], y=불합격0['학과명'], data=불합격0, marker="x",s=14,color='#111111' ,jitter=False, alpha=1, linewidth=1)
 
