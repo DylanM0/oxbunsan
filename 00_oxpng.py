@@ -12,6 +12,7 @@ from io import StringIO, BytesIO  # Standard Python Module
 
 
 
+matplotlib.rcParams['font.family'] = ['NanumBarunGothic']
 
 #plt.rc('font', family='NanumBarunGothic')
 #plt.rc('axes', unicode_minus=False)
