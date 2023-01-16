@@ -147,14 +147,17 @@ if uploaded_file:
     st.set_option('deprecation.showPyplotGlobalUse', False)            
     st.pyplot(png)
 	
-    def get_image_download_link(img,filename,text):
-    	buffered = BytesIO()
-    	img.save(buffered, format="png")
-    	img_str = base64.b64encode(buffered.getvalue()).decode()
-    	href =  f'<a href="data:file/txt;base64,{img_str}" download="{filename}">{text}</a>'
-    	return href
-
-    get_image_download_link(png,'대진대ox산포도.png')
+    from io import BytesIO
+    buf = BytesIO()
+    png.save(buf, format="png")
+    byte_im = buf.getvalue()
+	
+    btn = col.download_button(
+      label="Download Image",
+      data=byte_im,
+      file_name="imagename.png",
+      mime="image/png",
+      )
 
     
     
