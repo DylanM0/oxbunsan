@@ -36,7 +36,7 @@ if t:
 
     html, body, [class*="css"]  {
     font-family: 'Tangerine';
-    font-size: 48px;
+    font-size: 22px;
     }
     </style>
 
