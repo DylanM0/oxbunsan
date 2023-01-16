@@ -88,7 +88,7 @@ if uploaded_file:
     from matplotlib.patches import Rectangle
 	
 	
-    matplotlib.rcParams['font.family']='Malgun Gothic'
+    matplotlib.rcParams['font.family']='NanumBarunGothic'
     matplotlib.rcParams['axes.unicode_minus'] =False
     #def PlotEach():
     # plt.rc('font', family='NanumBarunGothic')
