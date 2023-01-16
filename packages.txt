@@ -1,3 +1,2 @@
 default-jre
 한국어*
-fonts-unfonts-core
