@@ -17,33 +17,6 @@ from io import StringIO, BytesIO  # Standard Python Module
 # with open( "style.css" ) as css:
 #     st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
 
-t = st.radio("Toggle to see font change", [True, False])
-
-if t:
-    st.markdown(
-        """
-        <style>
-@font-face {
-  font-family: 'Nanum Gothic';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/NanumGothic/NanumGothic-Regular.eot');
-  src: url('../fonts/NanumGothic/NanumGothic-Regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/NanumGothic/NanumGothic-Regular.woff2') format('woff2'),
-       url('../fonts/NanumGothic/NanumGothic-Regular.woff') format('woff'),
-       url('../fonts/NanumGothic/NanumGothic-Regular.ttf') format('truetype');        
-}
-
-    html, body, [class*="css"]  {
-    font-family: 'Tangerine';
-    font-size: 22px;
-    }
-    </style>
-
-    """,
-        unsafe_allow_html=True,
-    )
-
 
 
 
