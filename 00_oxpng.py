@@ -96,16 +96,16 @@ if uploaded_file:
 
     
     
-    sns.set_theme(font ='Noto Sans Kr',
+    sns.set_theme(font ='Noto Sans KR',
         	rc = {'axes.unicode_minus' : False},
         	style ='whitegrid')
     
     import matplotlib.font_manager as fm
-    fontpath = '/usr/share/fonts/truetype/nanum/NanumBarunGothic.ttf'
+    fontpath = "https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
     font = fm.FontProperties(fname=fontpath, size=9)
     
 
-    plt.rc('font', family='NanumBarunGothic') 
+    plt.rc('font', family='Noto Sans KR') 
 
     ax = sns.stripplot(x=불합격0['평균등급'], y=불합격0['학과명'], data=불합격0, marker="x",s=14,color='#111111' ,jitter=False, alpha=1, linewidth=1)
 
