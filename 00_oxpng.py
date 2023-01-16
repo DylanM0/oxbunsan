@@ -24,8 +24,7 @@ import matplotlib.pyplot as plt
 # 			"""
 # st.markdown(streamlit_style, unsafe_allow_html=True)
 
-matplotlib.rcParams['font.family']='Malgun Gothic'
-matplotlib.rcParams['axes.unicode_minus'] =False
+
 
 # with open( "style.css" ) as css:
 #     st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
@@ -87,11 +86,15 @@ if uploaded_file:
     import matplotlib as mpl
     import matplotlib.pyplot as plt
     from matplotlib.patches import Rectangle
+	
+	
+    matplotlib.rcParams['font.family']='Malgun Gothic'
+    matplotlib.rcParams['axes.unicode_minus'] =False
     #def PlotEach():
-    plt.rc('font', family='NanumBarunGothic')
+    # plt.rc('font', family='NanumBarunGothic')
 	
 	
-    sns.set(font="NanumBarunGothic", rc={"axes.unicode_minus":False}, style='darkgrid')
+    # sns.set(font="NanumBarunGothic", rc={"axes.unicode_minus":False}, style='darkgrid')
 
     
 
