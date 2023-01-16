@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# coding: utf-8
+# coding: cp949
 
 # In[10]:
 
@@ -38,7 +38,7 @@ st.subheader('Feed me with your Excel file')
 uploaded_file = st.file_uploader('XLSX 형식의 파일을 올려주세요', type='xlsx')
 if uploaded_file:
     st.markdown('전형명, 모집단위(코드포함), 등록여부, 산출등급')
-    df = pd.read_excel(uploaded_file, engine='openpyxl', encoding='cp949')
+    df = pd.read_excel(uploaded_file, engine='openpyxl')
     st.dataframe(df)
     
     df.columns=['전형유형','학과명','코드','합격차수','평균등급']
