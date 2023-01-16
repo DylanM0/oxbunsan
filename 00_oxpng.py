@@ -10,6 +10,7 @@ import base64  # Standard Python Module
 import numpy as np
 from io import StringIO, BytesIO  # Standard Python Module
 import matplotlib.pyplot as plt
+import koreanize_matplotlib
 
 
 
@@ -88,8 +89,8 @@ if uploaded_file:
     from matplotlib.patches import Rectangle
 	
 	
-    matplotlib.rcParams['font.family']='NanumBarunGothic'
-    matplotlib.rcParams['axes.unicode_minus'] =False
+    #matplotlib.rcParams['font.family']='NanumBarunGothic'
+    #matplotlib.rcParams['axes.unicode_minus'] =False
     #def PlotEach():
     # plt.rc('font', family='NanumBarunGothic')
 	
