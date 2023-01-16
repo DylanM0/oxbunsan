@@ -1,2 +1,2 @@
 default-jre
-Noto Sans KR
+korean*
