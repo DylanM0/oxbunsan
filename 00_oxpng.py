@@ -14,25 +14,6 @@ import koreanize_matplotlib
 
 
 
-# streamlit_style = """
-# 			<style>
-# 			@import url('https://fonts.googleapis.com/css2?family=Noto Sans KR:wght@300&display=swap');
-
-# 			html, body, [class*="css"]  {
-# 			font-family: 'Noto Sans KR', sans-serif;
-# 			}
-# 			</style>
-# 			"""
-# st.markdown(streamlit_style, unsafe_allow_html=True)
-
-
-
-# with open( "style.css" ) as css:
-#     st.markdown( f'<style>{css.read()}</style>' , unsafe_allow_html= True)
-
-
-
-
 
 
 
@@ -122,7 +103,7 @@ if uploaded_file:
     ax.set_xticklabels(['1등급','2등급','3등급','4등급','5등급','6등급','7등급','8등급','9등급'])    
 
 
-    ax.set_title('2023학년도 대진대학교 OX 산포도'+'\n', fontsize=25)
+    ax.set_title('2023학년도 대진대학교 '+ choice_column +' OX 산포도'+'\n', fontsize=25)
 
     ax.tick_params(right=False, top=True, labelright=False, labeltop=True)  # 모두 True일 경우 x축 2개 y축 2개
 
@@ -141,7 +122,7 @@ if uploaded_file:
     plt.gca().add_patch(Rectangle((7.55,-0.4),1.4,0.85,linewidth=1,edgecolor='#E4E4E4',facecolor='#E4E4E4')) 
 
     for i in su:
-        plt.text(1.1,i,'평균: '+ str(shen[int(i-0.1)]) ,fontsize=13, color='#006699') #평균을 집어넣자
+        plt.text(1.1,i,'평균: '+ str(shen[int(i-0.1)]) ,fontsize=11, color='#006699') #평균을 집어넣자
         plt.gca().add_patch(Rectangle((1.08,-0.2+int(i-0.1)),0.6,0.58,linewidth=1,edgecolor='#006699',facecolor='none'))  # 네모칸을 쳐보자
 
 
