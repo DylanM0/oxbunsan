@@ -155,7 +155,7 @@ if uploaded_file:
 	
     btn = st.download_button(
       label="Download Image",
-      data=byte_im,
+      data=png,
       file_name="daejinox.png",
       mime="image/png",
       )
