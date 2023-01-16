@@ -11,7 +11,16 @@ import numpy as np
 from io import StringIO, BytesIO  # Standard Python Module
 
 
+streamlit_style = """
+			<style>
+			@import url('https://fonts.googleapis.com/css2?family=NanumBarunGothic:wght@100&display=swap');
 
+			html, body, [class*="css"]  {
+			font-family: 'NanumBarunGothic', sans-serif;
+			}
+			</style>
+			"""
+st.markdown(streamlit_style, unsafe_allow_html=True)
 
 #plt.rc('font', family='NanumBarunGothic')
 #plt.rc('axes', unicode_minus=False)
