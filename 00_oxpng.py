@@ -129,7 +129,7 @@ if uploaded_file:
         png = plt.savefig('대진대ox산포도.png')
             
                 
-    PlotEach()
+    st.PlotEach()
     
     st.download_button(
     label="Download Pic as Png",
