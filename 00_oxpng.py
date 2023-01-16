@@ -46,7 +46,7 @@ def generate_excel_download_link(df):
 
 
 
-st.set_page_config(page_title='Excel로 올려서 컷을 다운받자')
+st.set_page_config(page_title='Excel upload')
 st.title('전형별 OX산포도 만들기? 📈')
 st.subheader('Feed me with your Excel file')
 
