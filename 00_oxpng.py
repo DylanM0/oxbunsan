@@ -37,7 +37,7 @@ if uploaded_file:
     df = pd.read_excel(uploaded_file, engine='openpyxl')
     st.dataframe(df)
     
-    df.columns=['전형유형','학과명','코드','합격차수','평균등급]
+    df.columns=['전형유형','학과명','코드','합격차수','평균등급']
     
     
     choice = df['전형명'].unique()
