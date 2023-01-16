@@ -11,7 +11,7 @@ import numpy as np
 from io import StringIO, BytesIO  # Standard Python Module
 import matplotlib.pyplot as plt
 
-%matplotlib inline
+
 
 # streamlit_style = """
 # 			<style>
@@ -88,8 +88,10 @@ if uploaded_file:
     import matplotlib.pyplot as plt
     from matplotlib.patches import Rectangle
     #def PlotEach():
-
-    sns.set(font="Noto Sans KR", rc={"axes.unicode_minus":False}, style='darkgrid')
+    plt.rc('font', family='NanumBarunGothic')
+	
+	
+    sns.set(font="NanumBarunGothic", rc={"axes.unicode_minus":False}, style='darkgrid')
 
     
 
