@@ -10,7 +10,6 @@ import base64  # Standard Python Module
 import numpy as np
 from io import StringIO, BytesIO  # Standard Python Module
 
-%matplotlib inline
 
 plt.rc('font', family='NanumBarunGothic')
 plt.rc('axes', unicode_minus=False)
