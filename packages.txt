@@ -1,2 +1,2 @@
 default-jre
-한국어*
+korean*
