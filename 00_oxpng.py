@@ -151,6 +151,38 @@ if uploaded_file:
     st.set_option('deprecation.showPyplotGlobalUse', False)            
     st.pyplot(png)
 	
+    
+
+
+    st.subheader('boxplot')
+	
+    ax= sns.boxplot(x='학과명',y='평균등급',data=합격0)
+
+    plt.xticks(rotation = - 90 )
+    plt.rcParams['figure.figsize'] = (20, 10)
+    ax.figure.set_size_inches(25, 15)
+
+
+    ax.set_ylim([1,9])
+    ax.set_yticks((1,2,3,4,5,6,7,8,9))
+    ax.set_yticklabels(['1등급','2등급','3등급','4등급','5등급','6등급','7등급','8등급','9등급'])
+
+
+    ax.tick_params(right=True, top=False, labelright=True, labeltop=False)  # 모두 True일 경우 x축 2개 y축 2개
+
+    ax = plt.gca()
+    ax.grid(which='major', axis='both', linestyle=':', color='gray')
+    ax.set_facecolor('w')
+
+
+    plt.gca().invert_yaxis()
+    plt.xlabel('모집단위명', color = 'k', fontsize = 25)
+    plt.ylabel('과목평균등급', color = 'k', fontsize = 25)
+    plt.rcParams.update({'font.size': 20})
+    plt.gcf().subplots_adjust(bottom=0.37)
+    box1 = plt.savefig('대진대박스플롯.png')
+    st.pyplot(box1)
+	
 
 	
 
