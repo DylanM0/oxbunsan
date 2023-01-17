@@ -189,21 +189,6 @@ if uploaded_file:
 	
     # Save to file first or an image file has already existed.
    
-    plt.savefig(png)
-    with open(png, "rb") as img:
-    	btn = st.download_button(
-     	   label="ox분산표",
-        	data=img,
-        	file_name=png,
-        	mime="image/png" )
-
-    plt.savefig(box1)
-    with open(box1, "rb") as img:
-    	btn = st.download_button(
-     	   label="boxplot",
-        	data=img,
-        	file_name=box1,
-        	mime="image/png" )
 	
 
 	
