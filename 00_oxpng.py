@@ -117,8 +117,8 @@ if uploaded_file:
 
     plt.text(7.60,-0.05,'O' ,fontsize=17, color='#5954ED')
     plt.text(7.62,0.34,'X' ,fontsize=16, color='#202020')
-    plt.text(7.78,-0.1,'합격(충원합격포함)' ,fontsize=15, color='black')
-    plt.text(7.78,0.32,'불합격' ,fontsize=15, color='black')
+    plt.text(7.78,-0.1,'합격(충원합격포함)' ,fontsize=14, color='black')
+    plt.text(7.78,0.32,'불합격' ,fontsize=14, color='black')
     plt.gca().add_patch(Rectangle((7.55,-0.4),1.4,0.85,linewidth=1,edgecolor='#E4E4E4',facecolor='#E4E4E4')) 
 
     for i in su:
