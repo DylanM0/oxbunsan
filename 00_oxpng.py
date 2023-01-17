@@ -112,7 +112,7 @@ if uploaded_file:
     ax.set_xticklabels(['1등급','2등급','3등급','4등급','5등급','6등급','7등급','8등급','9등급'])    
 
 
-    ax.set_title('2023학년도 '+ daxue + choice_column +' OX 산포도'+'\n', fontsize=25)
+    ax.set_title('2023학년도 '+ daxue +' '+ choice_column +' OX 산포도'+'\n', fontsize=25)
 
     ax.tick_params(right=False, top=True, labelright=False, labeltop=True)  # 모두 True일 경우 x축 2개 y축 2개
 
