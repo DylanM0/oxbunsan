@@ -145,7 +145,8 @@ if uploaded_file:
 
     plt.gcf().subplots_adjust(left=0.2)
 
-    png = plt.savefig('대진대ox산포도.png')
+    png = '대진대ox산포도.png'
+    plt.savefig(png)
     
             
     st.set_option('deprecation.showPyplotGlobalUse', False)            
@@ -180,8 +181,29 @@ if uploaded_file:
     plt.ylabel('과목평균등급', color = 'k', fontsize = 25)
     plt.rcParams.update({'font.size': 20})
     plt.gcf().subplots_adjust(bottom=0.37)
-    box1 = plt.savefig('대진대박스플롯.png')
+	
+    box1 = '대진대박스플롯.png' 	
+    plt.savefig(box1)
     st.pyplot(box1)
+	
+	
+    # Save to file first or an image file has already existed.
+   
+    plt.savefig(png)
+    with open(png, "rb") as img:
+    	btn = st.download_button(
+     	   label="ox분산표",
+        	data=img,
+        	file_name=png,
+        	mime="image/png" )
+
+    plt.savefig(box1)
+    with open(box1, "rb") as img:
+    	btn = st.download_button(
+     	   label="boxplot",
+        	data=img,
+        	file_name=box1,
+        	mime="image/png" )
 	
 
 	
