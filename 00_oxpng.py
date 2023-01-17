@@ -35,7 +35,7 @@ def generate_excel_download_link(df):
 st.title('전형별 OX산포도 만들기? 📈')
 st.subheader('Feed me with your Excel file')
 
-st.text_input('대학명 입력', '대진대학교')
+daxue = st.text_input('대학명 입력', '대진대학교')
 color = st.color_picker('OX에서 O의 색을 결정해주세요', '#5954ED')
 
 uploaded_file = st.file_uploader('XLSX 형식의 파일을 올려주세요', type='xlsx')
