@@ -27,13 +27,15 @@ def generate_excel_download_link(df):
     return st.markdown(href, unsafe_allow_html=True)
 
 
-color = st.color_picker('OX에서 O의 색을 결정해주세요', '#00f900')
+
 
 
 
 #st.set_page_config(page_title='Excel upload')
 st.title('전형별 OX산포도 만들기? 📈')
 st.subheader('Feed me with your Excel file')
+
+color = st.color_picker('OX에서 O의 색을 결정해주세요', '#5954ED')
 
 uploaded_file = st.file_uploader('XLSX 형식의 파일을 올려주세요', type='xlsx')
 if uploaded_file:
@@ -87,12 +89,12 @@ if uploaded_file:
 
     open_circle = mpl.path.Path(vert)
 
-    ax = sns.stripplot(x=합격0['평균등급'], y=합격0['학과명'], data=합격0, marker=open_circle,s=17, color='#5954ED', jitter = False)
+    ax = sns.stripplot(x=합격0['평균등급'], y=합격0['학과명'], data=합격0, marker=open_circle,s=17, color=, jitter = False)
 
 
     
 
-    ax = sns.stripplot(x=불합격0['평균등급'], y=불합격0['학과명'], data=불합격0, marker="x",s=14,color=color ,jitter=False, alpha=1, linewidth=1)
+    ax = sns.stripplot(x=불합격0['평균등급'], y=불합격0['학과명'], data=불합격0, marker="x",s=14,color='#111111' ,jitter=False, alpha=1, linewidth=1)
 
 
 
