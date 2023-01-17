@@ -146,11 +146,11 @@ if uploaded_file:
     plt.gcf().subplots_adjust(left=0.2)
 
     png = '대진대ox산포도.png'
-    plt.savefig(png)
+    png1 = plt.savefig(png)
     
             
     st.set_option('deprecation.showPyplotGlobalUse', False)            
-    st.pyplot(png)
+    st.pyplot(png1)
 	
     
 
@@ -183,8 +183,8 @@ if uploaded_file:
     plt.gcf().subplots_adjust(bottom=0.37)
 	
     box1 = '대진대박스플롯.png' 	
-    plt.savefig(box1)
-    st.pyplot(box1)
+    box2 = plt.savefig(box1)
+    st.pyplot(box2)
 	
 	
     # Save to file first or an image file has already existed.
