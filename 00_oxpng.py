@@ -27,6 +27,8 @@ def generate_excel_download_link(df):
     return st.markdown(href, unsafe_allow_html=True)
 
 
+color = st.color_picker('OX에서 O의 색을 결정해주세요', '#00f900')
+
 
 
 #st.set_page_config(page_title='Excel upload')
@@ -90,7 +92,7 @@ if uploaded_file:
 
     
 
-    ax = sns.stripplot(x=불합격0['평균등급'], y=불합격0['학과명'], data=불합격0, marker="x",s=14,color='#111111' ,jitter=False, alpha=1, linewidth=1)
+    ax = sns.stripplot(x=불합격0['평균등급'], y=불합격0['학과명'], data=불합격0, marker="x",s=14,color=color ,jitter=False, alpha=1, linewidth=1)
 
 
 
