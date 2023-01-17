@@ -35,6 +35,7 @@ def generate_excel_download_link(df):
 st.title('전형별 OX산포도 만들기? 📈')
 st.subheader('Feed me with your Excel file')
 
+st.text_input('대학명 입력', '이곳에 입력해주세요')
 color = st.color_picker('OX에서 O의 색을 결정해주세요', '#5954ED')
 
 uploaded_file = st.file_uploader('XLSX 형식의 파일을 올려주세요', type='xlsx')
@@ -111,7 +112,7 @@ if uploaded_file:
     ax.set_xticklabels(['1등급','2등급','3등급','4등급','5등급','6등급','7등급','8등급','9등급'])    
 
 
-    ax.set_title('2023학년도 대진대학교 '+ choice_column +' OX 산포도'+'\n', fontsize=25)
+    ax.set_title('2023학년도 '+ daxue + choice_column +' OX 산포도'+'\n', fontsize=25)
 
     ax.tick_params(right=False, top=True, labelright=False, labeltop=True)  # 모두 True일 경우 x축 2개 y축 2개
 
