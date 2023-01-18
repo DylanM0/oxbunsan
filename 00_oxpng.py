@@ -90,12 +90,12 @@ if uploaded_file:
 
     open_circle = mpl.path.Path(vert)
 
-    ax = sns.stripplot(x=합격0['평균등급'], y=합격0['학과명'], data=합격0, marker=open_circle,s=17, color=color, jitter = False)
+    ax = sns.stripplot(x=합격0['평균등급'], y=합격0['학과명'], data=합격0, marker=open_circle,s=17, color=color, jitter = False, zorder=2)
 
 
     
 
-    ax = sns.stripplot(x=불합격0['평균등급'], y=불합격0['학과명'], data=불합격0, marker="x",s=14,color='#9FAEB7' ,jitter=False, alpha=1, linewidth=1)
+    ax = sns.stripplot(x=불합격0['평균등급'], y=불합격0['학과명'], data=불합격0, marker="x",s=14,color='#9FAEB7' ,jitter=False, alpha=1, linewidth=1, zorder=1)
 
 
 
